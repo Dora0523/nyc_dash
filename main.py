@@ -22,7 +22,7 @@ def callback2(attr,old,new):
 # load data ##################################################
 trimpath=('~/598A4/nyc_dash/nyctrim.csv')
 cleanpath=('~/598A4/nyc_dash/dataclean.csv')
-if not os.path.exists(trimpath):
+if not os.path.exists(cleanpath):
     processData(trimpath,cleanpath)
 
 df=pd.read_csv(cleanpath)
